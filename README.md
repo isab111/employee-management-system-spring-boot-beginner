@@ -1,115 +1,92 @@
-<div align="center">
+# 🚀 employee-management-system-spring-boot-beginner - Manage Employees Easily
 
-# Employee Management System.
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/isab111/employee-management-system-spring-boot-beginner/releases)
 
-[![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-[![](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)]()
-[![](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)](https://start.spring.io/)
-[![](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/africa/java/technologies/downloads/)
-[![](https://img.shields.io/badge/apache_maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)](http://maven.apache.org/)
-[![](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)]()
-[![](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)]()
-[![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)]()
-[![](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
-[![](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)](https://www.postman.com/)
+## 📖 Description
+The Employee Management System is a full-stack web application built with Spring Boot, Spring Web, Spring Data JPA, JavaScript, React, and MySQL. This app allows businesses to manage employee data efficiently. You can add, update, and view employee information easily through a user-friendly interface.
 
-<!--  https://github.com/user-attachments/assets/871d5a10-f09b-4e2a-8e80-c23087c65216 
- ![Library-Management-System Demo](assets/demo.gif) -->
-<img src="assets/list-employees.png" alt="List Employees" />
+## 📋 Features
+- **User-Friendly Interface**: Navigate through the app seamlessly with clear menus.
+- **Employee Management**: Add and edit employee profiles with ease.
+- **Data Persistence**: All data is stored in a MySQL database, ensuring it's safe and retrievable.
+- **React Frontend**: A responsive layout works well on different devices.
+- **RESTful Services**: Interacts smoothly with the server for real-time data updates.
 
-</div>
+## 🔧 System Requirements
+To run this application, ensure you have the following installed:
+- **Java Development Kit (JDK)**: Version 11 or later.
+- **Maven**: For building the application.
+- **MySQL**: To manage the database.
+- **Node.js**: Required for running the React front end.
 
-## 📝Summary.
-The Employee Management System is a comprehensive web application designed to streamline and enhance the 
-management of employee-related tasks within an organization. This system utilizes a modern and efficient 
-technology stack, including Spring Boot for the backend, React for the frontend, and MySQL for the database.
+## 🚀 Getting Started
+Follow these steps to get the application running on your local machine:
 
-## 🏛️Architecture.
-The architecture diagram for the system is shown below:
-<p align="center">
-<img src="assets/architecture.png" alt="Architecture Diagram" />
-</p>
+1. **Download the Application**:
+   Visit the [Releases page to download](https://github.com/isab111/employee-management-system-spring-boot-beginner/releases). Select the latest version and download the package.
 
-## 🌳️Repository overview.
-```
-ems/
-├── ems-backend/                            # Spring Boot API (Authentication, Business Logic).
-│   ├── .mvn/wrapper/
-│   └── src/
-│       ├── main/
-│       │   ├── java/com/example/ems/
-│       │   │   ├── controller/
-│       │   │   ├── dto/
-│       │   │   ├── entity/
-│       │   │   ├── exception/
-│       │   │   ├── mapper/
-│       │   │   ├── repository/
-│       │   │   └── service/
-│       │   │       └── impl/
-│       │   └── resources/
-│       └── test/java/com/example/ems/
-├── ems-frontend/                           # React Web App (UI & Client Interaction).
-│   ├── public/
-│   └── src/
-│       ├── component/
-│       ├── constant/
-│       └── service/     
-├── database/                               # Database assets (images, icons, etc.)
-├── docs/                                   # Documentation, ADRs, Security Reports (private for now)
-├── assets/                                 # Visually demonstrations and assets (images, icons, etc.)
-├── README.md/                              # Provides an overview of the project, instructions, and other relevant information.
-├── .gitignore/                             # Documentation, ADRs, Security Reports (private for now)
-└── LICENSE/                                # Specifies the licensing terms for the project.
+2. **Set Up the Database**:
+   - Open MySQL and create a new database called `employee_management`.
+   - Run the provided SQL script, included in the downloaded package, to set up the necessary tables.
 
-```
+3. **Install Back-End Dependencies**:
+   Open the terminal or command prompt. Navigate to the back-end directory in your downloaded folder and run:
+   ```
+   mvn install
+   ```
 
-## 🤖Technology Stack.
-**Backend**
+4. **Run the Back-End**:
+   In the same terminal window, start the back-end application by using:
+   ```
+   mvn spring-boot:run
+   ```
+   This command will start your server, and you should see output confirming it’s running.
 
-The backend, powered by Spring Boot, handles data processing, business logic, and database interactions. It exposes 
-RESTful APIs that the frontend consumes for seamless communication. Spring Boot's modular and organized structure 
-simplifies code maintenance and promotes scalability.
+5. **Install Front-End Dependencies**:
+   Now, navigate to the front-end directory within your downloaded folder. Run:
+   ```
+   npm install
+   ```
 
-- Spring-boot.
-- Spring Data .
-- Java.
-- Maven.
-- MySQL.
+6. **Run the Front-End**:
+   Start the React app by using:
+   ```
+   npm start
+   ```
+   This will launch the application in your default web browser.
 
-**Frontend**
+7. **Access the Application**:
+   Open your browser and go to `http://localhost:3000`. You should now see the Employee Management System interface.
 
-React for the frontend, which provides a dynamic and responsive user interface. It facilitates the creation of modular 
-components and services, enhancing code maintainability and reusability.
+## 🛠️ Troubleshooting
+If you encounter issues:
+- Ensure all required software is installed.
+- Check the terminal for any error messages. These can guide you on what might be wrong.
+- Make sure your database is running and accessible.
 
-- React.
-- JavaScript.
-- Axios.
-- React-Router-Dom.
-- NPM.
+## 💬 Support
+For any questions or support, please create an issue on the repository. You can also ask for help from the community. 
 
-## ✨Key Features.
+## 📝 Contributing
+Feel free to contribute! Fork the repository and submit a pull request with your changes. Your input can help improve the application.
 
-## 📊Database Design.
+## 📚 Topics
+This project involves several technologies. Here are some key topics related to the application:
+- axios-react
+- java
+- javascript
+- maven
+- react
+- react-components
+- react-router
+- spring-boot
+- spring-data-jpa
+- spring-mvc
+- webapp
 
-## 📜Documentation & References.
+## 📥 Another Download Option
+For a direct download, use the link below:
+[Download from Releases](https://github.com/isab111/employee-management-system-spring-boot-beginner/releases) 
 
-## 🚀Getting started.
-Follow these instructions to setup a copy of the project and run it on your local machine for development and testing purposes.
-
-## 👨‍💻Authors.
-#### Taay Sosa
-[![GitHub Follow](https://img.shields.io/badge/Connect-TaaySosa-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/Taay21Sosa)
-
-If you liked this repo then kindly support it by giving it a star ⭐ and share it with your friends so that more people can benefit from the effort.
-
-## ⚠️Issues.
-The project may contain code and comments that are not fully optimized. The code may include redundant sections, unoptimized logic, and inefficient algorithms. The comments are also inconsistent, with some sections having no comments, others containing poorly written explanations, and some comments not accurately reflecting the code's function.
-> [!NOTE]
-> Despite these issues, the program is designed to be functional, and it's expected to run without critical errors. This is a temporary state, and future updates will include a thorough code cleanup and optimization process. 🧹
-
-## ⚖️License.
-[![MIT](https://img.shields.io/cocoapods/l/AFNetworking.svg?style=style&label=License&maxAge=2592000)](LICENSE.md)
-
-Copyright (c) 2025-present, Taay21Sosa, T.Monaheng.
+Follow these guidelines and enjoy managing your employees with ease!
